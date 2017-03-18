@@ -17,7 +17,7 @@ before_script:
   - mysql -e 'create database kleis;'
   # install kleis
   - composer self-update
-  - composer install --prefer-source --no-interaction
+  - composer update --prefer-source --no-interaction
   - php artisan clear-compiled
   # start Laravel development server
   - php artisan serve >/dev/null 2>&1 &
