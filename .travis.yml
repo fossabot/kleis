@@ -11,6 +11,7 @@ branches:
   only:
   - master
   - develop
+  - test/dependencies-update
 
 before_script:
   # setup database
